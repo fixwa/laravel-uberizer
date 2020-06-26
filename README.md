@@ -26,8 +26,3 @@ composer require fixwa/uberizer
 ``` bash
 composer test
 ```
-
-
-## License
-
-The The Unlicense. Please see [License File](LICENSE.md) for more information.
