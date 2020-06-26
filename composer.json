@@ -6,7 +6,7 @@
         "uberizer"
     ],
     "homepage": "https://github.com/fixwa/uberizer",
-    "license": "The Unlicense",
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
