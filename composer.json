@@ -1,0 +1,53 @@
+{
+    "name": "fixwa/uberizer",
+    "description": "Provides a User <-> Service Provider - Uber-Like system.",
+    "keywords": [
+        "fixwa",
+        "uberizer"
+    ],
+    "homepage": "https://github.com/fixwa/uberizer",
+    "license": "The Unlicense",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pablo Nuñez",
+            "email": "fixwah@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fixwa\\Uberizer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fixwa\\Uberizer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fixwa\\Uberizer\\UberizerServiceProvider"
+            ],
+            "aliases": {
+                "Uberizer": "Fixwa\\Uberizer\\UberizerFacade"
+            }
+        }
+    }
+}
